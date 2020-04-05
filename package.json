@@ -3,18 +3,43 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@material-ui/core": "^4.9.9",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
+    "eslint-plugin-standard": "^4.0.1",
+    "history": "^4.10.1",
+    "lodash": "^4.17.15",
+    "material-ui": "^0.20.2",
+    "node-sass": "^4.13.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "react-scripts": "3.4.1"
+    "react-loading": "^2.0.3",
+    "react-localize-redux": "^3.5.3",
+    "react-redux": "^7.2.0",
+    "react-router-dom": "^5.1.2",
+    "react-scripts": "3.4.1",
+    "redux": "^4.0.5",
+    "redux-devtools-extension": "^2.13.8",
+    "redux-persist": "^6.0.0",
+    "redux-thunk": "^2.3.0"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "check-syntax": "yarn lint && yarn prettier-check",
+    "prettier-fix": "prettier --write **/*.js",
+    "prettier-check": "prettier --list-different **/*.js",
+    "lint-fix": "eslint --fix .",
+    "fix": "eslint --fix . && prettier --write **/*.js",
+    "lint": "eslint ."
+  },
+  "husky": {
+    "hooks": {
+      "pre-push": "yarn check-syntax"
+    }
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -30,5 +55,16 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.1.0",
+    "eslint": "^6.8.0",
+    "eslint-config-standard": "^14.1.1",
+    "eslint-plugin-import": "^2.20.2",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-react": "^7.19.0",
+    "husky": "^4.2.3",
+    "prettier": "^2.0.2"
   }
 }

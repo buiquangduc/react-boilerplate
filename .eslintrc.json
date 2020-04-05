@@ -1,0 +1,33 @@
+{
+  "plugins": [
+    "react",
+    "prettier"
+  ],
+  "parser": "babel-eslint",
+  "parserOptions": {
+    "ecmaVersion": 2018,
+    "ecmaFeatures": {
+      "jsx": true,
+      "modules": true
+    },
+    "sourceType": "module",
+    "useJSXTextNode": false
+  },
+  "env": {
+    "jest": true,
+  },
+  "extends": [
+    "standard",
+    "plugin:react/recommended",
+    "plugin:prettier/recommended"
+  ],
+  "settings": {
+    "react": {
+      "version": "detect"
+    },
+  },
+  "rules": {
+    "react/prop-types": ["error", { "ignore": ["navigation"] }],
+    "semi": 0
+  }
+}

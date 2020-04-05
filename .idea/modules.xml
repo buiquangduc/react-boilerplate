@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../homeland-web/.idea/homeland-web.iml" filepath="$PROJECT_DIR$/../homeland-web/.idea/homeland-web.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../Homeland/.idea/homelandapp.iml" filepath="$PROJECT_DIR$/../Homeland/.idea/homelandapp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/react-boilerplate.iml" filepath="$PROJECT_DIR$/.idea/react-boilerplate.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../test/.idea/test.iml" filepath="$PROJECT_DIR$/../test/.idea/test.iml" />
+    </modules>
+  </component>
+</project>
