@@ -3,3 +3,4 @@ android/**
 ios/**
 __tests__/**
 components/**
+src/serviceWorker.js
